@@ -1,79 +1,39 @@
-# Space Travelers Hub
-
 <a name="readme-top"></a>
-
-<div align="center">
-  
-  <br/>
-</h3>
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [Space Travelers Hub](#space-travelers-hub)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Space Travelers Hub ](#-space-travelers-hub-)
-  - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
+- [📖 Space Traveller's Hub ](#-space-travellers-hub-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
-    - [Install](#install)
+    - [INSTALL](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
+    - [Testing](#testing)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
   - [📝 License ](#-license-)
 
-# 📖 [Space Travelers Hub <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
 
-\*\*[Space Travelers Hub] Space Travelers' Hub is a web application that provides commercial and scientific space travel services using the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.
+# 📖 Space Traveller's Hub <a name="about-project"></a>
 
-## 🛠 Built With <a name="built-with"></a>
+**Space traveler's hub** is a single-page website where users can reserve rockets and join space missions.
 
-### Tech Stack <a name="tech-stack"></a>
-
-<details>
-  <summary>Markup</summary>
-  <ul>
-    <li><a href="https://https://developer.mozilla.org">HTML</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Styles</summary>
-  <ul>
-    <li><a href="https://https://developer.mozilla.org">CSS</a></li>
-  </ul>
-</details>
-<details>
-  <summary>React</summary>
-  <ul>
-    <li><a href="https://https://developer.mozilla.org">CSS</a></li>
-  </ul>
-</details>
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[SPA]**
-- **[APIs]**
+- **You can reserve rocket**
+- **You can join missions**
+- **You can view reservation on my profile page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo" ></a>
-
-- [Live Demo](Coming soon...)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -82,49 +42,57 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-A text-editor like VS code or Sublime Editor and a github account.
 
 ### Setup
-
 Clone this repository to your desired folder:
 
-Example commands:
-
 ```sh
-  cd <desired folder to contain project>
+  cd my-folder
   git clone https://github.com/Roland-Ntwali/Space_traveler.git
-
+  
 ```
 
-### Install
+### INSTALL
+
+Before installing the app, make sure to install node.js in your machine. In order to check if node is installed run the following command:
+
+```sh
+  node -v
+```
 
 Install this project with:
 
 ```sh
-npm install
+  npm install
 ```
 
 ### Usage
 
-To run the project, execute the following command:
-
-- Open the terminal and execute
+To run the project in a development server, execute the following command:
 
 ```sh
-npm start
+  npm start
 ```
 
-### Run tests
+### Testing
 
-- On the terminal
+To run the tests in a development server, execute the following command:
 
 ```sh
-npm test
+  npm test
+```
+
+To to build for the production, execute the following command:
+
+```sh
+  npm run build
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+<br />
 
 👤 **Roland Ntwali**
 
@@ -138,41 +106,40 @@ npm test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Backend features]**
-- [ ] **[Better UI design]**
+- [ ] Allow users to leave missions from the Profile page
+- [ ] Allow users to unreserve Rockets from the Profile page
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Roland-Ntwali/Space_traveler/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project,give it a ⭐️!
+If you like this project then give it a star ⭐️ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks to everyone whose idea and codebase was used in this project. Moreso to other Micronauts who have actively offered their support in bug fixing🙏
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-N/A
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 This project is [MIT](./LICENSE) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

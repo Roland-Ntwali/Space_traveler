@@ -1,17 +1,12 @@
-/* eslint-disable */
-import React from "react";
-import UpdateRocket from "./RocketProfile";
-import Missionprofile from "./missionProfile";
+import React from 'react';
+import UpdateRocket from './RocketProfile';
+import Missionprofile from './missionProfile';
 
-
-const MyProfile = () => {
-
-  return(
-    <table className="profile_d">
-      <Missionprofile />
-      <UpdateRocket />
-    </table>
-  )
-};
+const MyProfile = () => (
+  <table className="profile_d">
+    <Missionprofile />
+    <UpdateRocket />
+  </table>
+);
 
 export default MyProfile;
