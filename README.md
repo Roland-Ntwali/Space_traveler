@@ -92,7 +92,7 @@ Example commands:
 
 ```sh
   cd <desired folder to contain project>
-  git https://github.com/Roland-Ntwali/Space_traveler.git
+  git clone https://github.com/Roland-Ntwali/Space_traveler.git
 
 ```
 
