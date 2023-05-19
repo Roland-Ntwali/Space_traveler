@@ -1,52 +1,59 @@
+/* eslint-disable */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const url = 'https://api.spacexdata.com/v3/missions';
 
-const Mission = async () => {
+const getMission = async () => {
   const resolve = await fetch(url);
   const mission = await resolve.json();
   return mission;
 };
 
-const getMission = createAsyncThunk('missions/getMission', Mission);
+export const fetchMission = createAsyncThunk('missions/fetchMission', getMission);
 
-const missionSlice = createSlice({
+const MissionSlice = createSlice({
   name: 'missions',
   initialState: {
     missions: [],
-    isLoading: false,
-    error: undefined,
+    status: 'mission_display',
+    loading: false,
   },
-  reducers: {
-    spacejet: (state, action) => {
-      const myState = state;
-      const newState = myState.missions.map((jet1) => {
-        if (jet1.id !== action.payload) {
-          return jet1;
-        }
-        return {
-          ...jet1, mission: !jet1.mission,
-        };
-      });
-      myState.missions = newState;
-    },
-  },
+  reducers:{
+    spacejet:(state, action) => {
+const myState = state
+const newState = myState.missions.map((jet1) => {
+  if(jet1.id !== action.payload){
+    return jet1
+  }
+  return{
+    ...jet1, mission: !jet1.mission
+  }
+})
+myState.missions = newState
+}
+},
 
-  extraReducers: (builder) => {
-    builder.addCase(getMission.pending, (state) => {
-      state.isLoading = true;
-    }).addCase(getMission.fulfilled, (state, action) => {
-      state.isLoading = false;
-      state.missions = action.payload;
-      state.error = '';
-    }).addCase(getMission.rejected, (state, action) => {
-      state.isLoading = false;
-      state.missions = [];
-      state.error = action.error.message;
-    });
+  extraReducers: {
+    [fetchMission.pending]: (state) => {
+      state.pending = true;
+    },
+    [fetchMission.fulfilled]: (state, action) => {
+      const joinMission = state
+      joinMission.loading = false;
+      const missionData = []
+      action.payload.map((mission) => missionData.push({
+        id:mission.mission_id,
+        name:mission.mission_name,
+        description:mission.description,
+        mission:false
+      }))
+      joinMission.missions = missionData;
+    },
+    [fetchMission.rejected]: (state) => {
+      state.loading = false;
+    },
   },
 });
 
-export const { spacejet } = missionSlice.actions;
-export { getMission };
-export default missionSlice.reducer;
+export default MissionSlice.reducer;
+export const {spacejet} = MissionSlice.actions;
