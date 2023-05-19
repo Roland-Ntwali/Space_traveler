@@ -1,39 +1,184 @@
-.App {
-  text-align: center;
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_bar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.logo_head {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.logo_head p {
+  font-size: 30px;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 100px;
+}
+
+.rocket,
+.mission,
+.profile {
+  color: #0290ff;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rocket:hover {
+  text-decoration: underline;
+}
+
+.mission:hover {
+  text-decoration: underline;
+}
+
+.profile:hover {
+  text-decoration: underline;
+}
+
+.rocket_details {
+  display: flex;
+}
+
+.rocket_image {
+  width: 40%;
+  height: auto;
+}
+
+.rocket_name {
+  font-size: 20px;
+}
+
+.rocket_description {
+  font-size: 18px;
+}
+
+.rocket_description span {
+  background-color: #0a5d9c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.ReserveBtn {
+  cursor: pointer;
+  border: transparent;
+  filter: brightness(150%);
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.reserve_btn {
+  background-color: #0290ff;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #fff;
+  width: fit-content;
+}
+
+.cancel_reserve {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(163, 161, 161);
+  color: #02030f;
+  border: 1px solid #050508;
+}
+
+.mission_table {
+  margin-top: 50px;
+  background-color: rgb(200, 196, 196);
+}
+
+.mission_tr {
+  background-color: white;
+}
+
+.mission_tr:nth-child(even) {
+  background-color: rgb(244, 244, 244);
+}
+
+#mission_tr_h {
+  background-color: #fff;
+}
+
+.mission_tr td {
+  padding: 10px;
+}
+
+#mission_tr_h td {
+  font-weight: 900;
+}
+
+.mission_table button {
+  width: 10rem;
+}
+
+.join_btn {
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.join_btn:focus {
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid red;
+  background-color: #fff;
+  color: red;
+}
+
+.not_member {
+  background-color: rgb(123, 122, 122);
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.not_member:focus {
+  background-color: #0290ff;
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.table {
+  background-color: rgb(200, 196, 196);
+  width: 400px;
+  margin: 20px;
+}
+
+.profile_d {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.t_body {
+  font-size: 25px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.t_tr_d {
+  padding: 20px;
+  margin: 20px;
 }

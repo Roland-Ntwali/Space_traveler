@@ -18,8 +18,8 @@ const RocketsDisplay = (props) => {
       <img src={image} alt={image} className="rocket_image" />
       <div>
         <h1 className="rocket_name">{name}</h1>
-        <p className="recket_description">
-          {reserved && <sapan> Reseved</sapan>}
+        <p className="rocket_description">
+          {reserved && <span> Reserved</span>}
           {' '}
           {description}
         </p>
